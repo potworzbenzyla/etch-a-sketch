@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(50,50,50);
+    margin: 0px;
+}
+
+header{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuOption{
+    margin: 1px auto 0px auto;
+    width: 200px;
+    height: 30px;
+    background-color: rgb(65,65,65);
+    border: rgb(50,50,50);
+    border-radius: 3px;
+    outline: 0;
+    font-size: 16px;
+}
+
+.menuOption:hover{
+    background-color: rgb(75,75,75);
+}
+
+.submenu{
+    position: absolute;
+    display: none;
+    width: 608px;
+    height: 40px;
+    margin: 5px 0px 5px;
+    background-color: rgb(65,65,65);
+    border-radius: 3px;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorOption{
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px 0px 5px;
+    border: 0;
+}
+
+.box{
+    border-width: 1px;
+    border-style: solid;
+}
+
+#menuTrigger{
+    display: none;
+    width: 100%;
+    height: 30px;
+    margin: 1px auto 5px auto;
+    font-size: 16px;
+    background-color: rgb(65,65,65);
+    border: rgb(50,50,50);
+    border-radius: 3px;
+    outline: 0;
+}
+
+#menu{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#gameScreen{
+    display: grid;
+    width: 608px;
+    height: 600px;
+    background-color: rgb(75,75,75);
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 625px){
+    .menuOption{
+        width: 100%;
+    }
+
+    .submenu{
+        width: 100%;
+    }
+
+    #menuTrigger{
+        display: block;
+    }
+
+    #menu{
+        display: none;
+        width: 100%;
+    }
+
+    #gameScreen{
+        width: 100%;
+    }
+}

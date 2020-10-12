@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Etch-a-Sketch </title>
+        <meta name = 'author' content='Mateusz Mularski'>
+        <meta charset = 'utf8'>
+        <link rel='stylesheet' href='styles.css'>
+        <script src='script.js'></script>
+    </head>
+
+    <body>
+        <div class='container'>
+
+            <header>
+                <h1>Etch-a-Sketch</h1>
+                <p>Just try to be creative!</p>
+            </header>
+
+            <button id="menuTrigger"> Menu </button>
+
+            <nav id='menu'>
+                <button class='menuOption' id='clearScreen' focusable="false"> Clear screen </button>
+                <button class='menuOption'  id='changeSize'> Change size </button>
+                <button class='menuOption' id='changeColor'> Change color </button>
+
+                <div id='submenuColor' class='submenu'>
+                    <button class='colorOption' value='red'></button>
+                    <button class='colorOption' value='green'></button>
+                    <button class='colorOption' value='yellow'></button>
+                    <button class='colorOption' value='orange'></button>
+                    <button class='colorOption' value='blue'></button>
+                    <button class='colorOption' value='pink'></button>
+                    <button class='colorOption' value='purple'></button>
+                    <button class='colorOption' value='black'></button>
+                    <button class='colorOption' value='white'></button>
+                    <button class='colorOption' value='brown'></button>
+                </div>
+
+                <main id='submenuSize' class='submenu'>
+                    How many boxes in a row do you need? &nbsp; &nbsp; &nbsp; <input type="number" id="sizeInput" min="0" max='64' value='32'>
+                </main>
+            </nav>
+            <div id='gameScreen'></div>
+        </div>
+    </body>
+</html>
